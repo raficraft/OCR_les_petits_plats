@@ -1,0 +1,27 @@
+footer{
+    background-color: rgba(53,53,53,1);
+    padding : 1.5rem;
+    color : white;
+
+    h2,a{
+        color : white;
+        display: flex;
+    }
+
+    a{margin : 0.5rem 0; }
+
+    li{
+        display: flex;
+        align-items: center;
+
+        &:nth-child(2) i{
+            transform: rotate(135deg);
+        }
+    }
+
+    i{font-size : 0.75rem; margin-right : 0.5rem;}
+
+   
+}
+
+.font-client{  font-family: 'Shrikhand', cursive;  }

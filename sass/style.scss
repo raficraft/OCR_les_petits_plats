@@ -2,12 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@200;300;500;700;900&display=swap');
 
 
-@import "libs/variables.scss";
-@import "libs/reset.scss";
-@import "libs/10-typo.scss";
-@import "libs/20-header.scss";
-@import "libs/30-features.scss";
-@import "libs/40-restaurants.scss";
+
 
 C:\wamp64\www\OCR\projet2\Sass\sass\libs\_variable.scss
 
@@ -38,6 +33,8 @@ h2,h3{
 
 img{width:200px;}
 
+button{cursor: pointer;}
+
 /*# sourceMappingURL=style.css.map */
 
 
@@ -51,3 +48,10 @@ img{width:200px;}
 /**Listing**/
 /**Listing**/
 
+@import "libs/variables.scss";
+@import "libs/reset.scss";
+@import "libs/10-typo.scss";
+@import "libs/20-header.scss";
+@import "libs/30-features.scss";
+@import "libs/40-restaurants.scss";
+@import "libs/50-footer.scss";

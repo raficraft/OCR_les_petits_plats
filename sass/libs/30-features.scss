@@ -21,16 +21,31 @@
     ul{
         display: flex;
         flex-direction: column;
+        width : 100%;
 
        li{
         display: flex;
+       
         align-items: center;
-        position : relative;
+        position : relative;       
         margin : 0.5rem;
-        padding:1.5rem;
         background-color: $dark-gray;
         border-radius: 1rem;
         box-shadow: $shadow;
+
+        a{
+            display: flex;
+            padding:1.5rem 0;
+            width: 100%;
+            font-weight : bold;            
+        }
+
+        a i{
+            margin:0 1.5em 0 1rem;
+        }
+
+
+
        }
 
        li:before{
@@ -48,14 +63,17 @@
            font-size: 0.75rem;
        }
 
-       /*boucle*/
-       li:nth-child(1){
+
+
+       
+       /*boucle créer une classe pour la cible*/
+       li:nth-child(1) a i{
         color : rgba(126,126,126,1) 
         }
-       li:nth-child(2){
+       li:nth-child(2) a i{
         color : rgba(126,126,126,1) 
         }
-       li:nth-child(3){
+       li:nth-child(3) a i{
         color : $primary-color; 
         }
        

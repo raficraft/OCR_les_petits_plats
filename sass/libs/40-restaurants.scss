@@ -39,6 +39,7 @@
     box-shadow: $shadow;
     margin : 0.75rem 0;    
     position : relative;
+    overflow: hidden;
 
     img{
         border-top-left-radius: 1rem;
@@ -51,6 +52,7 @@
        flex-direction: row; 
        justify-content: space-between;
        align-items: center;
+       position : relative;
        padding : 1rem;
        
 
@@ -69,11 +71,34 @@
         position: absolute;
         top : 0.5rem;
         right : 1rem;
-        padding : 0.25rem;
-        font-size: 0.625rem;
+        padding : 0.5rem 1rem;
+        font-size: 0.75rem;
         text-transform: capitalize;
         border-radius: 2px;
-
     }
+    i{
+        font-size: 1.5rem;
+        color : rgb(68, 68, 68);
+        cursor : pointer;
+        position: absolute;
+        right : 1rem;
+        bottom : 2rem;
+        &.invisible{
+            opacity :0.4;
+           
+        }
+      
+    }
+
+    
     
 }
+
+.invisible:hover{display: block; opacity :1;}
+
+//boucle
+
+.restaurant ul li:nth-child(1) img { margin-top : -2.725rem;}
+.restaurant ul li:nth-child(2) img { margin-top : -8.725rem;}
+.restaurant ul li:nth-child(3) img { margin-top : -2.725rem;}
+.restaurant ul li:nth-child(4) img { margin-top : -3rem;}

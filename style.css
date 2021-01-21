@@ -1,5 +1,45 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@200;300;500;700;900&display=swap");
+C:wamp64wwwOCRprojet2Sasssasslibs_variable.scss * {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+h2, h3 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  width: 200px;
+}
+
+button {
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=style.css.map */
+/***HEADER***/
+/***HEADER***/
+/**Listing**/
+/**Listing**/
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -138,7 +178,8 @@ a {
 .features ul {
   display: flex;
   flex-direction: column;
-  /*boucle*/
+  width: 100%;
+  /*boucle créer une classe pour la cible*/
   /*boucle*/
 }
 .features ul li {
@@ -146,10 +187,18 @@ a {
   align-items: center;
   position: relative;
   margin: 0.5rem;
-  padding: 1.5rem;
   background-color: #f6f6f6;
   border-radius: 1rem;
   box-shadow: 0 4px 5px 0 rgba(80, 80, 80, 0.6);
+}
+.features ul li a {
+  display: flex;
+  padding: 1.5rem 0;
+  width: 100%;
+  font-weight: bold;
+}
+.features ul li a i {
+  margin: 0 1.5em 0 1rem;
 }
 .features ul li:before {
   content: "";
@@ -165,13 +214,13 @@ a {
   color: white;
   font-size: 0.75rem;
 }
-.features ul li:nth-child(1) {
+.features ul li:nth-child(1) a i {
   color: #7e7e7e;
 }
-.features ul li:nth-child(2) {
+.features ul li:nth-child(2) a i {
   color: #7e7e7e;
 }
-.features ul li:nth-child(3) {
+.features ul li:nth-child(3) a i {
   color: #9356DC;
 }
 .features ul li:nth-child(1):before {
@@ -222,6 +271,7 @@ a {
   box-shadow: 0 4px 5px 0 rgba(80, 80, 80, 0.6);
   margin: 0.75rem 0;
   position: relative;
+  overflow: hidden;
 }
 .sticker img {
   border-top-left-radius: 1rem;
@@ -233,6 +283,7 @@ a {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  position: relative;
   padding: 1rem;
 }
 .sticker .sticker__info .sticker__txt {
@@ -245,46 +296,70 @@ a {
   position: absolute;
   top: 0.5rem;
   right: 1rem;
-  padding: 0.25rem;
-  font-size: 0.625rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.75rem;
   text-transform: capitalize;
   border-radius: 2px;
 }
-
-C:wamp64wwwOCRprojet2Sasssasslibs_variable.scss * {
-  box-sizing: border-box;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  line-height: 1;
-}
-
-h1 {
+.sticker i {
   font-size: 1.5rem;
-  margin-bottom: 1rem;
+  color: #444444;
+  cursor: pointer;
+  position: absolute;
+  right: 1rem;
+  bottom: 2rem;
+}
+.sticker i.invisible {
+  opacity: 0.4;
 }
 
-h2, h3 {
-  font-size: 1rem;
-  margin-bottom: 1rem;
+.invisible:hover {
+  display: block;
+  opacity: 1;
 }
 
-* {
-  box-sizing: border-box;
+.restaurant ul li:nth-child(1) img {
+  margin-top: -2.725rem;
 }
 
-img {
-  width: 200px;
+.restaurant ul li:nth-child(2) img {
+  margin-top: -8.725rem;
 }
 
-/*# sourceMappingURL=style.css.map */
-/***HEADER***/
-/***HEADER***/
-/**Listing**/
-/**Listing**/
+.restaurant ul li:nth-child(3) img {
+  margin-top: -2.725rem;
+}
+
+.restaurant ul li:nth-child(4) img {
+  margin-top: -3rem;
+}
+
+footer {
+  background-color: #353535;
+  padding: 1.5rem;
+  color: white;
+}
+footer h2, footer a {
+  color: white;
+  display: flex;
+}
+footer a {
+  margin: 0.5rem 0;
+}
+footer li {
+  display: flex;
+  align-items: center;
+}
+footer li:nth-child(2) i {
+  transform: rotate(135deg);
+}
+footer i {
+  font-size: 0.75rem;
+  margin-right: 0.5rem;
+}
+
+.font-client {
+  font-family: "Shrikhand", cursive;
+}
 
 /*# sourceMappingURL=style.css.map */
