@@ -8,19 +8,30 @@ footer{
         display: flex;
     }
 
-    a{margin : 0.5rem 0; }
+    h2{
+        font-size : 0.875rem
+    }
+
+    a{
+        margin : 0.5rem 0;
+          font-family: "roboto";
+          font-size:0.75rem; }
 
     li{
         display: flex;
         align-items: center;
 
         &:nth-child(2) i{
-            transform: rotate(135deg);
+            transform: rotate(-45deg);
+            margin-left : -3px;
+            font-size: 0.75rem;
         }
     }
 
-    i{font-size : 0.75rem; margin-right : 0.5rem;}
-
+    i{
+        font-size : 0.875rem;
+         margin-right : 0.625rem;
+    }
    
 }
 

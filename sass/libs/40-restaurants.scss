@@ -46,22 +46,6 @@
         border-top-right-radius: 1rem;
     }
 
-    .sticker__info{
-       height: 77px;
-       display: flex;
-       flex-direction: row; 
-       justify-content: space-between;
-       align-items: center;
-       position : relative;
-       padding : 1rem;
-       
-
-       .sticker__txt{
-           font-weight: 300;
-       }
-       
-    }
-
     .sticker__new{
         display: flex;
         //Ajouer aux variables.
@@ -69,8 +53,8 @@
         background-color: #99e2d0;
         color : #008766;
         position: absolute;
-        top : 0.5rem;
-        right : 1rem;
+        top : 0.75rem;
+        right : 0.75rem;
         padding : 0.5rem 1rem;
         font-size: 0.75rem;
         text-transform: capitalize;
@@ -81,20 +65,48 @@
         color : rgb(68, 68, 68);
         cursor : pointer;
         position: absolute;
-        right : 1rem;
+        right : 1.5rem;
         bottom : 2rem;
-        &.invisible{
-            opacity :0.4;
-           
-        }
+
       
     }
-
-    
     
 }
 
-.invisible:hover{display: block; opacity :1;}
+.sticker__info{
+    height: 77px;
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    align-items: center;
+    position : relative;
+    padding : 0.75rem 1rem;
+
+    >div{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .sticker__title{
+        font-size : 1.25rem;
+        font-weight: bold;
+        //Verifier la police de tous les text
+        font-family: "roboto";
+        margin-top : 0.375rem;
+        margin-bottom : 0.375rem;
+        
+    }
+    
+
+    .sticker__txt{
+        font-weight: 300;
+        font-family: "roboto";
+        text-transform: capitalize;
+    }
+    
+ }
+
 
 //boucle
 
