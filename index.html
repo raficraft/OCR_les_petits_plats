@@ -4,107 +4,164 @@
   <meta charset="utf-8">
   <title>Titre de la page</title>
   <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
+  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous"/>
+ 
 </head>
 <body> 
 
-<header>
-  <h1>Ohmyfood</h1>
-  <p>Paris, belleville</p>
-  <article>
-    <h1>Réservez le menu qui vous convient</h1>
-    <p>Découvrez des restaurants d'exception selectionnés par nos soins.</p>
-    <input value="Explorer nos restaurants d'exception">  
-  </article>
-</header>
+  <header class="header">
+    <h1 class="logo">Ohmyfood</h1>
+    <span class=txt__cityLocation>
+      <i class="fas fa-map-marker-alt searchLocation"></i>
+      <p>Paris, Belleville</p>
+    </span>
+    <article>
+      <h1>Réservez le menu qui vous convient</h1>
+      <p>Découvrez des restaurants d'exception selectionnés par nos soins.</p>
+      <input class="callToAction" value="Explorer nos restaurants">  
+    </article>
+  </header>
+
+
+
+
   <main>
 
-    <section>
+    <section id="features" class="features">
       <header>
         <h1>Fonctionnement</h1>
         
       </header>
 
-      <ul>
-        <li><a href="#">items 1</a></li>
-        <li><a href="#">items 2</a></li>
-        <li><a href="#">items 3</a></li>
+      <ul class="features__list">
+        <li><i class="fas fa-mobile-alt"></i><a href="#">choississez un restaurant</a></li>
+        <li><i class="fas fa-list-ul"></i><a href="#">composez votre menu</a></li>
+        <li class="bloc__link--active"><i class="fas fa-store"></i><a href="#">dégustez au restaurant</a></li>
       </ul>
 
     </section>
 
-  <section>
-      <header>
-      <h1>Restaurants</h1>
-      </header>
-        <article>
+    <section class="restaurant">
+        <header>
+        <h1>Restaurants</h1>
+        </header>
+          <article>
 
-          <a href="">
-            <ul>
-              <li>
-                <p>
-                  <img src="" alt="" srcset="">
-                  <h2>Nom du restaurants</h2>
-                  <p>lieux du restaurants</p>
-                </p>
-              </li>
-            </ul>
-          </a>
+        <ul>
+          <li class="sticker">
+            <a href="">
 
-          <a href="">
-            <ul>
-              <li>
-                <p>
-                  <img src="" alt="" srcset="">
-                  <h2>Nom du restaurants</h2>
-                  <p>lieux du restaurants</p>
-                </p>
-              </li>
-            </ul>
-          </a>
+              <p class="flexImg">
+                <img class="imgFlex" src="img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="" srcset="">
+              </p>
 
-          <a href="">
-            <ul>
-              <li>
-                <p>
-                  <img src="" alt="" srcset="">
-                  <h2>Nom du restaurants</h2>
-                  <p>lieux du restaurants</p>
-                </p>
-              </li>
-            </ul>
-          </a>
+              <div class="sticker__info">
+                
+                <div>
+                  <h2 class="sticker__title">Nom du restaurants</h2>
+                  <p class="sticker__txt">lieux du restaurants</p> 
+                </div>              
 
-          <a href="">
-            <ul>
-              <li>
-                <p>
-                  <img src="" alt="" srcset="">
-                  <h2>Nom du restaurants</h2>
-                  <p>lieux du restaurants</p>
-                </p>
-              </li>
-            </ul>
-          </a>
+                <i class="fas fa-heart"></i>
 
-      </article>
-    
+              </div> 
+              <p class="sticker__new">nouveau</p>
+              
+            </a>
+          </li>
 
-  </section>
+          <li class="sticker">
+            <a href="">
+
+              <p class="flexImg">
+                <img class="imgFlex" src="img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="" srcset="">
+              </p>
+
+              <div class="sticker__info">
+                
+                <div>
+                  <h2 class="sticker__title">Nom du restaurants</h2>
+                  <p class="sticker__txt">lieux du restaurants</p> 
+                </div>              
+
+                <i class="fas fa-heart"></i>
+
+              </div> 
+              <p class="sticker__new">nouveau</p>
+              
+            </a>
+          </li>
+
+
+          <li class="sticker">
+            <a href="">
+
+              <p class="flexImg">
+                <img class="imgFlex" src="img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="" srcset="">
+              </p>
+
+              <div class="sticker__info">
+                
+                <div>
+                  <h2 class="sticker__title">Nom du restaurants</h2>
+                  <p class="sticker__txt">lieux du restaurants</p> 
+                </div>              
+
+                <i class="fas fa-heart"></i>
+
+              </div> 
+              <p class="sticker__new">nouveau</p>
+              
+            </a>
+          </li>
+
+
+          <li class="sticker">
+            <a href="">
+
+              <p class="flexImg">
+                <img class="imgFlex" src="img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="" srcset="">
+              </p>
+
+              <div class="sticker__info">
+                
+                <div>
+                  <h2 class="sticker__title">Nom du restaurants</h2>
+                  <p class="sticker__txt">lieux du restaurants</p> 
+                </div>              
+
+                <i class="fas fa-heart"></i>
+
+              </div> 
+              <p class="sticker__new">nouveau</p>
+              
+            </a>
+          </li>
+
+        </ul>
+
+        </article>
+      
+
+    </section>
 
   </main>
-<footer>
 
-  <ul>
-    <li><a href="http://" target="_blank" rel="noopener noreferrer">Proposer un restaurant</a></li>
-    <li><a href="http://" target="_blank" rel="noopener noreferrer">Devenir partenaire</a></li>
-    <li><a href="http://" target="_blank" rel="noopener noreferrer">Mentions légales</a></li>
-    <li><a href="http://" target="_blank" rel="noopener noreferrer">Contact</a></li>
-  </ul>
+  <footer>
+
+    <header><a href=""><h2>ohmyfood</h2></a></header>
+
+    <ul>
+      <li><a href="http://" target="_blank" rel="noopener noreferrer">Proposer un restaurant</a></li>
+      <li><a href="http://" target="_blank" rel="noopener noreferrer">Devenir partenaire</a></li>
+      <li><a href="http://" target="_blank" rel="noopener noreferrer">Mentions légales</a></li>
+      <li><a href="http://" target="_blank" rel="noopener noreferrer">Contact</a></li>
+    </ul>
 
 
 
-</footer>
+  </footer>
 
 </body>
 </html>
