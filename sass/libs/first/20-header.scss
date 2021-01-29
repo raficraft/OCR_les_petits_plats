@@ -1,0 +1,127 @@
+
+.header{
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background: white;
+
+
+
+        .logo {
+            
+            font-family: 'Shrikhand', cursive;
+            font-size: 1.75rem;
+            text-align : center;
+            padding : 1rem 1.5rem;
+            margin-bottom :0;
+            background-color: white;
+            box-shadow: 0 0px 10px 2px rgba(44, 44, 44, 0.6);
+            z-index: 10;         
+        }
+
+        .txt__cityLocation{
+            display : flex;
+            flex-direction: row;
+            justify-content: center;
+            padding : 1rem 0;
+            background-color: $light-gray;
+           
+            p{
+                margin-left: 1rem;
+            }
+        }
+
+        article{
+            display : flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            background-color: $dark-gray;
+            text-align : center;
+            padding : 2.625rem 1.5rem 3.5rem;
+
+            h1{
+                font-size : 1.5rem;
+                font-weight : 600;
+                max-width: 72%;
+                line-height: 1.75rem;;
+            }
+
+            p{
+                margin-bottom: 2rem;
+                color : rgba(80, 80, 80, 0.6);
+                line-height: 1.25rem;
+                font-size: 200;
+
+            }
+
+        }
+
+     
+        
+}
+
+/*Utilisation des pseudo éléments
+Pour avoir une transition dans le dégradé
+*/
+
+
+.callToAction{
+    width : 230px;
+    border-radius: 1.5rem;
+    padding : 1em;
+    text-align : center;
+    background: linear-gradient(
+        180deg,
+        #{$secondary-color} 0%,
+        #{$primary-color} 100%
+        );
+    border : none;
+    box-shadow: 0 4px 15px 0 rgba(80, 80, 80, 0.6);
+    color : white;
+    font-size: 1rem;
+    position : relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+
+
+    
+    &::before{
+        position : absolute;
+        content: "";
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        border-radius: 1.5rem;
+        background: linear-gradient(
+            180deg,
+            lighten($secondary-color,20%) 0%,
+            lighten($primary-color,10%) 100%
+            );
+            background-position:0px 50px;  
+            box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.8);
+            transition: opacity 0.5s linear, 0.5s linear;
+            transition: color 0.5s linear, 0.5s linear;
+            transition: text-shadow 0.5s linear, 0.5s linear;
+            opacity: 0;
+        
+        
+    }
+    &:hover::before,&:hover{
+        opacity: 1;
+        //n'agisse que sur le :hover et non sur le before
+        font-weight : bold;
+        text-shadow  : 0 4px 3px $primary-color;
+
+    }
+}
+
+main .callToAction{
+    margin-bottom : 5.125rem;
+}
+

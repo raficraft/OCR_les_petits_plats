@@ -3,10 +3,12 @@
 
 
 
-@import "libs/variables.scss";
-@import "libs/reset.scss";
-@import "libs/10-typo.scss";
-@import "libs/20-header.scss";
-@import "libs/30-features.scss";
-@import "libs/40-restaurants.scss";
-@import "libs/50-footer.scss";
+@import "libs/first/variables.scss";
+@import "libs/first/reset.scss";
+@import "libs/first/10-typo.scss";
+@import "libs/first/20-header.scss";
+@import "libs/first/30-features.scss";
+@import "libs/first/40-restaurants.scss";
+@import "libs/first/50-footer.scss";
+@import "libs/first/60-menu.scss";
+@import "libs/first/70-animation.scss";

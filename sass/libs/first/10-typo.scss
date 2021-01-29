@@ -1,0 +1,26 @@
+/*Repère vertical et horizontal.
+	Permet de contrôler les alignements.
+	NB:Ecrire une fonction SASS, 
+	réflechir à une grille de fond et|ou 
+	en sur-impression.
+	Outil JS dans le coin inférieure 
+	de l'écran.
+	*/
+	
+	body:after{
+	  position: fixed;
+	  right : 3rem;
+	  content : '';
+	  width: 1px;
+	  height : 100%;
+	  background-color: red;
+	}
+	body:before{
+	  position: fixed;
+	  top : 410px;
+	  content : '';
+	  width: 100%;
+	  height : 1px;
+      background-color: red;
+      z-index: 300;
+	}
