@@ -105,9 +105,7 @@ Pour avoir une transition dans le dégradé
             );
             background-position:0px 50px;  
             box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.8);
-            transition: opacity 0.5s linear, 0.5s linear;
-            transition: color 0.5s linear, 0.5s linear;
-            transition: text-shadow 0.5s linear, 0.5s linear;
+            transition: all 0.5s linear, 0.5s linear;
             opacity: 0;
         
         
