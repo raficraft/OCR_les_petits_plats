@@ -1,6 +1,6 @@
 .animation__onLoad{
 
-    position : absolute;
+    position : fixed;
     z-index : 200;
     top:0;
     bottom:0;
@@ -14,7 +14,6 @@
     animation-duration: 0s;
     animation-delay: 3s;
     animation-fill-mode: forwards; 
-
 }
 
 .animation__container{

@@ -52,8 +52,10 @@
             p{
                 margin-bottom: 2rem;
                 color : rgba(80, 80, 80, 0.6);
-                line-height: 1.25rem;
-                font-size: 200;
+                line-height: 1.375rem;
+                font-weight: 200;
+                font-size: 1.125rem;
+
 
             }
 
@@ -69,19 +71,20 @@ Pour avoir une transition dans le dégradé
 
 
 .callToAction{
-    width : 230px;
+    width : 220px;
     border-radius: 1.5rem;
-    padding : 1em;
+    padding : 1em 0;
     text-align : center;
     background: linear-gradient(
         180deg,
-        #{$secondary-color} 0%,
-        #{$primary-color} 100%
+        #{$secondary-color} -20%,
+        #{$primary-color} 180%
         );
     border : none;
     box-shadow: 0 4px 15px 0 rgba(80, 80, 80, 0.6);
     color : white;
     font-size: 1rem;
+    font-weight: 300;
     position : relative;
     z-index: 1;
     display: flex;
@@ -100,8 +103,8 @@ Pour avoir une transition dans le dégradé
         border-radius: 1.5rem;
         background: linear-gradient(
             180deg,
-            lighten($secondary-color,20%) 0%,
-            lighten($primary-color,10%) 100%
+            lighten($secondary-color,20%) -20%,
+            lighten($primary-color,10%) 140%
             );
             background-position:0px 50px;  
             box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.8);
@@ -111,9 +114,7 @@ Pour avoir une transition dans le dégradé
         
     }
     &:hover::before,&:hover{
-        opacity: 1;
-        //n'agisse que sur le :hover et non sur le before
-        font-weight : bold;
+        opacity: 1;      
         text-shadow  : 0 4px 3px $primary-color;
 
     }
