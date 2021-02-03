@@ -89,12 +89,6 @@ main{
                 margin-top: -2.5rem;
                 margin-right :1.725rem;
 
-                @media screen and (min-width : 768px){
-
-                    margin-right: 2.5rem;;
-                    
-                }
-
                 .fontIcon{
                 background : $dark-gray!important;                
                 }
@@ -134,8 +128,7 @@ main{
 
 .recipe{
 
-    margin-bottom:  3rem;
-    padding : 0 0.75rem;
+    margin : 0 0.75rem 0.75rem;
     overflow : hidden;
 
     @media screen and (min-width : 768px){
@@ -193,7 +186,6 @@ main{
                 text-overflow: ellipsis;
                 white-space: nowrap;
                 overflow: hidden;    
-                font-size: 1.125rem;
             }
         }
 
@@ -274,7 +266,6 @@ main{
                 font-weight: bold;
                 background-color: white;                
                 transition: transform 500ms ease-in-out;
-                margin-left :1rem;
             }
         }
 
