@@ -1,0 +1,43 @@
+.footer{
+    background-color: rgba(53,53,53,1);
+    padding : 1.5rem;
+    color : white;
+
+    @media screen and (min-width : 1440px){
+
+       
+        inline-size: 1376px;
+        margin : auto;
+       
+    }
+
+    h2,a{
+        color : white;
+        display: flex;
+        font-size : 1rem
+    }
+
+    a{
+        margin : 0.5rem 0;
+          font-family: "roboto";
+    }
+
+    li{
+        display: flex;
+        align-items: center;
+
+        &:nth-child(2) i{
+            transform: rotate(-45deg);
+            margin-left : -3px;
+            font-size: 0.75rem;
+        }
+    }
+
+    i{
+        font-size : 0.875rem;
+         margin-right : 0.625rem;
+    }
+   
+}
+
+.font-client{  font-family: 'Shrikhand', cursive;  }

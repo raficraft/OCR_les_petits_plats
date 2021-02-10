@@ -2,109 +2,202 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8">
-  <title>Titre de la page</title>
+  <title>Ohmyfood</title>
   <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
+  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous"/>
+ 
 </head>
 <body> 
 
-<header>
-  <h1>Ohmyfood</h1>
-  <p>Paris, belleville</p>
-  <article>
-    <h1>Réservez le menu qui vous convient</h1>
-    <p>Découvrez des restaurants d'exception selectionnés par nos soins.</p>
-    <input value="Explorer nos restaurants d'exception">  
-  </article>
-</header>
+  <div class="animation__onLoad">
+    <div class="animation__container">      
+      <span class="animation__loader"><span></span></span>     
+    </div>
+  </div>
+
+  <header class="header">
+    
+      <h1 class="logo"><a href="index.html">ohmyfood</a></h1>
+    
+    <div class=txt__cityLocation>
+      <i class="fas fa-map-marker-alt searchLocation"></i>
+      <p>Paris, Belleville</p>
+    </div>
+    <article>
+      <h2>Réservez le menu qui vous convient</h2>
+      <p>Découvrez des restaurants d'exception selectionnés par nos soins.</p>
+      <button class="callToAction">Explorer nos restaurants</button> 
+    </article>
+  </header>
+
+
+
+
   <main>
 
-    <section>
-      <header>
-        <h1>Fonctionnement</h1>
+    <div class="main__wrapper">
+
+      <section id="features" class="features">
+        <header>
+          <h2>Fonctionnement</h2>
+          
+        </header>
+
+        <ul class="features__list">
+          <li>
+            <a href="#">
+              <i class="fas fa-mobile-alt"></i>
+              Choississez un restaurant</a>
+          </li>
+          
+          <li>
+            <a href="#">
+              <i class="fas fa-list-ul">              
+              </i>Composez votre menu</a>
+            </li>
+
+          <li class="bloc__link--active">
+            <a href="#">
+              <i class="fas fa-store"></i>
+              Dégustez au restaurant</a>
+            </li>
+        </ul>
+
+      </section>
+
+      <section class="restaurant">
+          <header>
+          <h2>Restaurants</h2>
+          </header>
+          <article>
+
+            <ul>
+              <li class="sticker">
+                <a href="la-palette-du-gout.html">
+
+                  <p class="flexImg">
+                    <img class="imgFlex" src="img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût">
+                  </p>
+
+                  <div class="sticker__info">
+                    
+                    <div>
+                      <h2 class="sticker__title">La palette du goût</h2>
+                      <p class="sticker__txt">Ménilmontant</p> 
+                    </div>              
+
+                    <div class="fontIcon__container">
+                      <i class="fas fa-heart fontIcon__invisible fontIcon__invisible--gradientPurple">
+                      </i>
+                      <i class="far fa-heart fontIcon"></i>
+                    </div>
+
+                  </div> 
+                  <p class="sticker__new">nouveau</p>                  
+                  
+                </a>
+              </li>
+
+              <li class="sticker">
+                <a href="la-note-enchantee.html">
+
+                  <p class="flexImg">
+                    <img class="imgFlex" src="img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée">
+                  </p>
+
+                  <div class="sticker__info">
+                    
+                    <div>
+                      <h2 class="sticker__title">La note enchantée</h2>
+                      <p class="sticker__txt">Charonne</p> 
+                    </div>              
+
+                    <div class="fontIcon__container">
+                      <i class="fas fa-heart fontIcon__invisible fontIcon__invisible--gradientPurple">
+                      </i>
+                      <i class="far fa-heart fontIcon"></i>
+                    </div>
+
+                  </div> 
+                  <p class="sticker__new">nouveau</p>
+                  
+                </a>
+              </li>
+
+
+              <li class="sticker">
+                <a href="a-la-francaise.html">
+
+                  <p class="flexImg">
+                    <img class="imgFlex" src="img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="A la française">
+                  </p>
+
+                  <div class="sticker__info">
+                    
+                    <div>
+                      <h2 class="sticker__title">A la française</h2>
+                      <p class="sticker__txt">cités Rouge</p> 
+                    </div>              
+
+                    <div class="fontIcon__container">
+                      <i class="fas fa-heart fontIcon__invisible fontIcon__invisible--gradientPurple">
+                      </i>
+                      <i class="far fa-heart fontIcon"></i>
+                    </div>
+
+                  </div> 
+                  
+                </a>
+              </li>
+
+
+              <li class="sticker">
+                <a href="le-delice-des-sens.html">
+
+                  <p class="flexImg">
+                    <img class="imgFlex" src="img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="le délice des sens">
+                  </p>
+
+                  <div class="sticker__info">
+                    
+                    <div>
+                      <h2 class="sticker__title">Le délice des sens</h2>
+                      <p class="sticker__txt">Folie-merincourt</p> 
+                    </div>              
+
+                    <div class="fontIcon__container">
+                      <i class="fas fa-heart fontIcon__invisible fontIcon__invisible--gradientPurple">
+                      </i>
+                      <i class="far fa-heart fontIcon"></i>
+                    </div>
+                  </div> 
+                  
+                </a>
+              </li>
+
+            </ul>
+
+          </article>
         
-      </header>
 
-      <ul>
-        <li><a href="#">items 1</a></li>
-        <li><a href="#">items 2</a></li>
-        <li><a href="#">items 3</a></li>
-      </ul>
+      </section>
 
-    </section>
-
-  <section>
-      <header>
-      <h1>Restaurants</h1>
-      </header>
-        <article>
-
-          <a href="">
-            <ul>
-              <li>
-                <p>
-                  <img src="" alt="" srcset="">
-                  <h2>Nom du restaurants</h2>
-                  <p>lieux du restaurants</p>
-                </p>
-              </li>
-            </ul>
-          </a>
-
-          <a href="">
-            <ul>
-              <li>
-                <p>
-                  <img src="" alt="" srcset="">
-                  <h2>Nom du restaurants</h2>
-                  <p>lieux du restaurants</p>
-                </p>
-              </li>
-            </ul>
-          </a>
-
-          <a href="">
-            <ul>
-              <li>
-                <p>
-                  <img src="" alt="" srcset="">
-                  <h2>Nom du restaurants</h2>
-                  <p>lieux du restaurants</p>
-                </p>
-              </li>
-            </ul>
-          </a>
-
-          <a href="">
-            <ul>
-              <li>
-                <p>
-                  <img src="" alt="" srcset="">
-                  <h2>Nom du restaurants</h2>
-                  <p>lieux du restaurants</p>
-                </p>
-              </li>
-            </ul>
-          </a>
-
-      </article>
-    
-
-  </section>
+    </div>
 
   </main>
-<footer>
 
-  <ul>
-    <li><a href="http://" target="_blank" rel="noopener noreferrer">Proposer un restaurant</a></li>
-    <li><a href="http://" target="_blank" rel="noopener noreferrer">Devenir partenaire</a></li>
-    <li><a href="http://" target="_blank" rel="noopener noreferrer">Mentions légales</a></li>
-    <li><a href="http://" target="_blank" rel="noopener noreferrer">Contact</a></li>
-  </ul>
+  <footer class="footer">
+    
+      <a href=""><h2 class="font-client">ohmyfood</h2></a>
+    <ul>
+      <li><i class="fas fa-utensils"></i><a href="#" target="_blank" >Proposer un restaurant</a></li>
+      <li><i class="fas fa-handshake"></i><a href="#" target="_blank" >Devenir partenaire</a></li>
+      <li><a href="#" target="_blank" >Mentions légales</a></li>
+      <li><a href="mailto:nullepart@ohmyfood.com" target="_blank" >Contact</a></li>
+    </ul>
 
-
-
-</footer>
+  </footer>
 
 </body>
 </html>
