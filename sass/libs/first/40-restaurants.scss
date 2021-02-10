@@ -157,12 +157,22 @@
         font-size: 1.5rem; 
         cursor : pointer;      
         -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        color: transparent;
         opacity : 1;
     }
 
   
 
+}
+
+//rustine
+
+.header__menu--restaurant{
+
+    .fontIcon__container{
+        margin-right: 2.5rem !important;
+    }
 }
 
 
