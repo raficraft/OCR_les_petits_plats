@@ -172,9 +172,7 @@ main{
         animation-duration: 2s;
         animation-fill-mode: forwards; 
         transform: translateY(100px);
-
-        /*Reduit la taille du titre lors du survol*/
-
+        
         header{
             width : 100%;            
             transition: all .5s ease-in-out;  
