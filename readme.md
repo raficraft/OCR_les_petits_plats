@@ -117,21 +117,26 @@ des points de suspension. Un exemple de l’effet attendu est fourni.
 - font-size texte ohmyfood qui semble légèrement différente à comparer de la maquette dans le footer.
 - Légère différence d'animation des menues sur la page restaurant. L'animation cible le bloc entier et pas les éléments enfants. Fait bouger les **titres** de l'ensemble 
 
+## Lien video pour les animations
+
+
+[**Page contenant les vidéos de travail pour les animations**](https://raficraft.github.io/raphaelparodi_3_16012021/source/maquettes/Animations/animations01.html)
+
+
 ## Visuel des maquettes
 
 **Acceuil**
 
 ![Acceuil](/source/maquettes/Accueil.png)
 
+--------------------------------------------------------------------------------------------------------------------------------------
+
 **Page restaurant**
 
 ![Acceuil](/source/maquettes/menu-le_delice_des_sens.png)
 
 
-## Lien video pour les animations
 
-
-[**Page contenant les vidéos de travail pour les animations**](https://raficraft.github.io/raphaelparodi_3_16012021/source/maquettes/Animations/animations01.html)
 
 
 
