@@ -115,7 +115,7 @@ des points de suspension. Un exemple de l’effet attendu est fourni.
 - Sur edge la balise P est légèrement aliasé.
 - L'animation du loader est toujours en cours lorsqu'elle disparait de l'écran (voir props animation-fill-mode)
 - font-size texte ohmyfood qui semble légèrement différente à comparer de la maquette dans le footer.
-- Légère différence d'animation des menues sur la page restaurant. L'animation cible le bloc entier et pas les éléments enfants. Fait bouger les **titres** de l'ensemble 
+- Légère différence d'animation des menus sur la page restaurant. L'animation cible le bloc entier et pas les éléments enfants. Fait bouger les **titres** de l'ensemble 
 
 ## Lien video pour les animations
 
