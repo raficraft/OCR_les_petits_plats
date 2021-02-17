@@ -231,8 +231,8 @@ main{
         }
 
         &:hover p.card__price{
-            transform: translateX(-60px);
-           
+            transition : 1s;
+            transform: translateX(-60px);          
 
         }
 

@@ -727,6 +727,7 @@ main {
   transition: transform 500ms ease-in-out;
 }
 .recipe .card__menu:hover p.card__price {
+  transition: 1s;
   transform: translateX(-60px);
 }
 .recipe .card__menu .card__details {
