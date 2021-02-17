@@ -254,6 +254,9 @@ main .callToAction {
   font-size: 1.375rem;
   font-weight: 700;
 }
+.features h2 {
+  font-weight: bold;
+}
 .features ul {
   display: flex;
   flex-direction: column;
@@ -263,7 +266,7 @@ main .callToAction {
   display: flex;
   align-items: center;
   position: relative;
-  margin: 0.75rem 0;
+  margin: 0.75rem 0 0.75rem 0.75rem;
   background-color: #f6f6f6;
   border-radius: 1.25rem;
   box-shadow: 0 4px 5px 0 rgba(200, 200, 200, 0.6);
