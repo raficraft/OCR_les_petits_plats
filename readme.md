@@ -95,8 +95,10 @@ des points de suspension. Un exemple de l’effet attendu est fourni.
 
 - Le site à été réalisé en utilisant VS code.
 
-- Le styles du sites à été réalisé en utilisant le préprocesseur SASS
+- Sité valide W3C validator
 
+- Le styles du sites à été réalisé en utilisant le préprocesseur SASS
+ 
 - Les styles, on été "découpé" en morceaux afin de faciliter le travail sur les différentes parties du site, puis recompilé par SASS. Voir le répertoire css/découpage. Voir sass/libs/first
 
 - Des repères, comme ceux présent dans Photoshop m'on permis d'aligner correctement les éléments comme sur la maquette (Voir de le CSS body::after et body::before). Je pense d'ailleurs améliorer le concept avec JS afin d'obtenir un véritable outil de développement pour les dévelopeurs front-end.
@@ -105,7 +107,33 @@ des points de suspension. Un exemple de l’effet attendu est fourni.
 
 ## Liens d'ébergements
 
-- Projet Reservia réalisé par Raphaël Parodi et hébergé sur [GitPages] https://raficraft.github.io/raphaelparodi_3_16012021/)
+- Projet Ohmyfood réalisé par Raphaël Parodi et hébergé sur [GitPages] https://raficraft.github.io/raphaelparodi_3_16012021/)
+
+## review de code (17/02/2021)
+
+- Animation cassé sur le prix , il translate correctement mais n'est plus temporisé [fixé (17/02/2021)]
+- Sur edge la balise P est légèrement aliasé.
+- L'animation du loader est toujours en cours lorsqu'elle disparait de l'écran (voir props animation-fill-mode)
+- font-size texte ohmyfood qui semble légèrement différente à comparer de la maquette dans le footer.
+- Légère différence d'animation des menues sur la page restaurant. L'animation cible le bloc entier et pas les éléments enfants. Fait bouger les **titres** de l'ensemble 
+
+## Visuel des maquettes
+
+**Acceuil**
+
+![Acceuil](/source/maquettes/Accueil.png)
+
+**Page restaurant**
+
+![Acceuil](/source/maquettes/menu-le_delice_des_sens.png)
+
+
+## Lien video pour les animations
+
+
+[**Page contenant les vidéos de travail pour les animations**](https://raficraft.github.io/raphaelparodi_3_16012021/source/maquettes/Animations/animations01.html)
+
+
 
 
 
