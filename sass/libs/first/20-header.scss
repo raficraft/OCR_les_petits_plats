@@ -1,31 +1,38 @@
 
 .header{
-    display : flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
+    @include col__justifyCenter__contentCenter;
     background: white;
 
 
 
         .logo {
             
-            font-family: 'Shrikhand', cursive;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding : 1.25rem 1rem 0.75rem;
+            margin-bottom :0;
+            font-family: $font-snd;
             font-size: 1.75rem;
             text-align : center;
-            padding : 1rem 1.5rem;
-            margin-bottom :0;
             background-color: white;
-            box-shadow: 0 0px 10px 2px rgba(44, 44, 44, 0.6);
-            z-index: 10;         
+            box-shadow: 0 0px 8px 0px rgba(105, 105, 105, 0.6);
+            z-index: 10;     
+            img{
+                height : 28px;
+            }  
+            p{
+                height : 28px;
+            }  
         }
 
         .txt__cityLocation{
-            display : flex;
-            flex-direction: row;
+            @include flexRow;
             justify-content: center;
             padding : 1rem 0;
+            color : #4b4b4b;
             background-color: $light-gray;
+
            
             p{
                 margin-left: 1rem;
@@ -33,10 +40,7 @@
         }
 
         article{
-            display : flex;
-            flex-direction: column;
-            justify-content: center;
-            align-content: center;
+            @include col__justifyCenter__contentCenter;
             align-items: center;
             background-color: $dark-gray;
             text-align : center;
@@ -71,27 +75,30 @@ Pour avoir une transition dans le dégradé
 
 
 .callToAction{
-    width : 220px;
-    border-radius: 1.5rem;
+    display: flex;
+    justify-content: center;
+    position : relative;
+    z-index: 1;
     padding : 1em 0;
+    width : 220px;
     text-align : center;
     background: linear-gradient(
         180deg,
         #{$secondary-color} -20%,
         #{$primary-color} 180%
         );
-    border : none;
     box-shadow: 0 4px 15px 0 rgba(80, 80, 80, 0.6);
     color : white;
     font-size: 1rem;
     font-weight: 300;
-    position : relative;
-    z-index: 1;
-    display: flex;
-    justify-content: center;
+    border : none;
+    border-radius: 1.5rem;
 
 
-    
+    // Permet de gerer l'éclaircissement du dégradé
+    // et l'assombrissment de son ombre.
+    // On utilise le pseudo selecteur ::before.
+    // Car l'on ne peut pas animer un dégradé avec css 
     &::before{
         position : absolute;
         content: "";
@@ -103,13 +110,13 @@ Pour avoir une transition dans le dégradé
         border-radius: 1.5rem;
         background: linear-gradient(
             180deg,
-            lighten($secondary-color,20%) -20%,
+            lighten($secondary-color,5%) -20%,
             lighten($primary-color,10%) 140%
             );
-            background-position:0px 50px;  
+            background-position:0px 50px; 
             box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.8);
-            transition: all 0.5s linear, 0.5s linear;
             opacity: 0;
+            transition: all 0.5s linear;
         
         
     }
@@ -121,6 +128,6 @@ Pour avoir une transition dans le dégradé
 }
 
 main .callToAction{
-    margin-bottom : 5.125rem;
+    margin-bottom : 4rem;
 }
 

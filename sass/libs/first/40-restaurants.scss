@@ -1,8 +1,7 @@
 .restaurant{
 
-    display: flex;
-    flex-direction: column;
-    padding : 3rem 1.5rem;
+    @include flexCol;
+    padding : 3rem 1.25rem 4rem;
     background-color: $dark-gray;
 
     @media screen and (min-width : 1440px){
@@ -10,13 +9,14 @@
         border-top-left-radius: 2rem;
         border-top-right-radius: 2rem;
         background-color: $dark-gray;
-
     }
+    
+
+    h2{font-weight: bold;}
 
     ul{
         
-        display: flex;
-        flex-direction: column;
+        @include flexCol;
 
         @media screen and (min-width : 768px){
           
@@ -26,8 +26,7 @@
         }
 
         li{
-            display: flex;
-            flex-direction: column;
+            @include flexCol;
             width: 100%;
             height: 251px;
 
@@ -49,12 +48,12 @@
 
 
 .sticker{
-    border-radius:  1rem;
-    height:252px;
-    box-shadow: $shadow;
-    margin : 0.75rem 0;    
     position : relative;
     overflow: hidden;
+    margin : 0.5rem 0;    
+    height:252px;
+    box-shadow: $shadow;
+    border-radius:  1rem;
 
     img{
         border-top-left-radius: 1rem;
@@ -62,15 +61,13 @@
     }
 
     .sticker__new{
-        display: flex;
-        //Ajouer aux variables.
-
-        background-color: #99e2d0;
-        color : #008766;
+        display: flex; 
         position: absolute;
         top : 0.75rem;
         right : 0.75rem;
         padding : 0.5rem 1rem;
+        background-color: #99e2d0;
+        color : #008766;
         font-size: 0.75rem;
         text-transform: capitalize;
         border-radius: 2px;
@@ -78,35 +75,31 @@
 }
 
 .sticker__info{
-    height: 77px;
-    display: flex;
-    flex-direction: row; 
-    justify-content: space-between;
-    align-items: center;
+    @include row__justifyBetween__itemsCenter;
     position : relative;
     padding : 0.75rem 1rem;
+    height: 77px;
     background-color: white;
 
     >div{
-        display: flex;
-        flex-direction: column;
+        @include flexCol;
         height: 100%;
     }
 
     .sticker__title{
-        font-size : 1rem;
+        margin-top : 0.375rem;
+        margin-bottom : 0.5rem;
+        font-size : 1.125rem;
         font-weight: bold;
         //Verifier la police de tous les text
-        font-family: "roboto";
-        margin-top : 0.375rem;
-        margin-bottom : 0.375rem;
+        font-family: $font-primary;
         
     }
     
 
     .sticker__txt{
         font-weight: 300;
-        font-family: "roboto";
+        font-family: $font-primary;
         text-transform: capitalize;
     }
     
@@ -117,12 +110,12 @@
 ///Show gradient.
 
  .fontIcon__container{
-    position : relative;
     display: flex;
-    height:100%;
-    flex: 1;
     justify-content: center;
     align-items: flex-end;
+    flex: 1;
+    position : relative;
+    height:100%;
 
 
 
@@ -133,13 +126,11 @@
         font-size: 1.5rem;
         cursor : pointer;
         transition: opacity 0.5s linear;        
-        background-color: rgb(255, 255, 255);
-        
+        background-color: rgb(255, 255, 255);        
 
         &:hover {
            opacity: 0;
-        }
-   
+        }   
     }
 
     .fontIcon__invisible--gradientPurple{
@@ -170,10 +161,17 @@
 
 .header__menu--restaurant{
 
-    .fontIcon__container{
-        margin-right: 2.5rem !important;
+    @media screen AND (min-width : 768px){
+   
+        .fontIcon__container{
+            margin-right: 3.25rem !important;
+        }
+
     }
+   
 }
+
+
 
 
 
