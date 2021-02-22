@@ -33,7 +33,7 @@ Bref, si l'on devait s'en tenir au directives. Il suffirait de simplement "retou
 - V2 le code réécrit avec la vérification du formulaire à la soumission. (respectant la [maquette Figma]
 - V3 L'ensemble avec une UI et une UX améliorer.
 
-##Détails de la V3
+## Détails de la V3
 
 
 ## Notes sur le projet
