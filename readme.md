@@ -1,94 +1,36 @@
-# Dynamisez une page web avec des animations CSS
+# Créez une landing page avec Javascript
 
-Intégration maquette HTML/CSS 
-Dynamiser la page avec des animations CSS
-Troisième projet du parcours développeur web d'OpenClassRooms.
+- Forkez une dépot Git
+- Corrigez les différentes Issues HTML/CSS
+- Corrigez les différentes Issues Javascript
+
+
 
 ## Objectif :
 
-Intégration et animation d'une maquette fournie au format PNG d'un site de commande de repas en ligne
+- Reprendre et terminé le travail d'un collègue qui à quitté l'entreprise.
+- 
 
-![Lien](https://user.oc-static.com/upload/2020/08/24/15982605908418_Maquettes%20Ohmyfood.jpg).
+![Lien](https://user.oc-static.com/upload/2020/08/14/15974189716945_image2.png).
 
 
 ## Éléments fourni par OpenClassRooms
 
-- Maquette au format Smartphone, largeur 375px.De la page index et de chaque restaurants
+- [Dépots github à forker](https://github.com/OpenClassrooms-Student-Center/GameOn-website-FR/)
 
-- Vidéo d'exemple des animùations à réaliser
+- [Les différentes issues restantes](https://github.com/OpenClassrooms-Student-Center/GameOn-website-FR/issues)
 
-- Logo aux fomats PNG et SVG
+- [Maquette figma](https://www.figma.com/file/prxFGnSUoEhk6PTcMaJQim/UI-Design-GameOn-EN?node-id=0%3A1)
 
+## Mon avis sur le projet
 
+Projet qui permet de ce confronter à la dure réalité de devoir travaillez sur une base qui n'est pas la sienne. Mais, en soit rien ne va dans le code fournie. HTML mal indenté, utilisation des balises div à outrance. Aucune utilisation des balises sémantique. Fonction js inutile. CSS anarchique, utilisation de toutes les unités de mesures immaginable. Certaines parties de l'UI sont illisibles, approche UX minimaliste.
 
-## Technologies
+Bref, si l'on devait s'en tenir au directives. Il suffirait de simplement "retouché" le code pour un obtenir un code propre. Seulement, on ne peut pas ce permettre avec un code de base aussi crade, la dette technique serait trop importante. Il a fallu donc tout reprendre de zéro. Réécrire le HTML/CSS. Repenser un peu l'UI , et améliorer l'UX. La seul directive que j'ai conserver , c'est que la vérification du formulaire ce fait lors de l'envoie de celui-ci. Et là aussi l'UX pourrait être améliorer en verififant les gens au fur et à mesure de la saisie de l'utilisateur. Vous pouvez voir ci dessous les 3 différentes version du code.
 
-- Le développement devra se faire en CSS, sans JavaScript.
-- Aucun framework ne devra être utilisé, en revanche l’utilisation de SASS serait un
-plus.
-- Aucun code CSS ne devra être appliqué via un attribut style dans une balise HTML.
-
-- Le code doit être versionné avec git et doit avoir un repo distant sur Github ou Gitlab
-
-- le site doit être hébergé sur GitPages.
-
-- Le site devra être compatible avec les dernières versions de Chrome et Firefox.
-
-## Identité graphique
-
-*Polices*
-- Logo et titres : [Shrikland](https://fonts.google.com/specimen/Shrikhand?preview.text_type=custom)
-- Texte[Roboto](https://fonts.google.com/specimen/Roboto?preview.text_type=custom&query=roboto)
-
-*Couleurs*
--Primaire : #9356DC(violet)
--Secondaire: #FF79DA(rose)
--Tertiare : #99E2D0(vert pastel)
-
-
-## Compatibilité
-
-La cible étant les personnes connectées et pressées, le site sera développé en utilisant
-l’approche mobile-first. Pour cette raison, seules des maquettes mobiles seront réalisées.
-Sur tablette et desktop, le site devra s’adapter, mais ces supports n’étant pas prioritaires,
-leur mise en page est libre.
-
-- L’ensemble du site devra être responsive sur mobile, tablette et desktop.
-- Les pages devront passer la validation W3C en HTML et CSS sans erreur.
-- Le site doit être parfaitement compatible avec les dernières versions desktop de
-Chrome et Firefox.
-
-## Effets graphiques et animations
-
-**Boutons**
-- Au survol, la couleur de fond des boutons principaux devra légèrement s’éclaircir.
-L’ombre portée devra également être plus visible.
-
-- À terme, les visiteurs pourront sauvegarder leurs menus préférés. Pour ça, un
-bouton "J’aime" en forme de cœur est présent sur la maquette. Au clic, il devra se
-remplir progressivement. Pour cette première version, l’effet peut être apparaître au
-survol sur desktop au lieu du clic.
-
-**Pages d'acceuil**
-
-- Quand l’application aura plus de menus, un “loading spinner” sera nécessaire. Sur
-cette maquette, nous souhaitons en avoir un aperçu. Il devra apparaître pendant 1 à
-3 secondes quand on arrive sur la page d'accueil, couvrir l'intégralité de l'écran, et
-utiliser les animations CSS (pas de librairie). Le design de ce loader n’est pas défini,
-toute proposition est donc la bienvenue tant qu’elle est cohérente avec la charte
-graphique du site.
-
-**Pages de menu**
-
-- À l’arrivée sur la page, les plats devront apparaître progressivement avec un léger
-décalage dans le temps. Ils pourront soit apparaître un par un, soit par groupe
-“Entrée”, “Plat” et “Dessert”. Un exemple de l’effet attendu est fourni.
-
-- Le visiteur peut ajouter les plats qu'il souhaite à sa commande en cliquant dessus.
-Cela fait apparaître une petite coche à droite du plat. Cette coche devra coulisser de
-la droite vers la gauche. Pour cette première version, l’effet peut apparaître au survol
-sur desktop au lieu du clic. Si l’intitulé du plat est trop long, il devra être rogné avec
-des points de suspension. Un exemple de l’effet attendu est fourni.
+- V1 le code de base non retouché
+- V2 le code réécrit avec la vérification du formulaire à la soumission. (respectant la [maquette Figma]
+- V3 L'ensemble avec une UI et une UX améliorer.
 
 
 ## Notes sur le projet
@@ -98,48 +40,8 @@ des points de suspension. Un exemple de l’effet attendu est fourni.
 - Sité valide W3C validator
 
 - Le styles du sites à été réalisé en utilisant le préprocesseur SASS
- 
-- Les styles, on été "découpé" en morceaux afin de faciliter le travail sur les différentes parties du site, puis recompilé par SASS. Voir le répertoire css/découpage. Voir sass/libs/first
 
-- Des repères, comme ceux présent dans Photoshop m'on permis d'aligner correctement les éléments comme sur la maquette (Voir de le CSS body::after et body::before). Je pense d'ailleurs améliorer le concept avec JS afin d'obtenir un véritable outil de développement pour les dévelopeurs front-end.
-
-- Projet vraiment intéressant qui m'as permit de pratiquer les animations avec CSS et de comprendre à quelle moment utilisé les transitions ou les keyframes
 
 ## Liens d'ébergements
 
-- Projet Ohmyfood réalisé par Raphaël Parodi et hébergé sur [GitPages] https://raficraft.github.io/raphaelparodi_3_16012021/)
-
-## review de code (17/02/2021)
-
-- Animation cassé sur le prix , il translate correctement mais n'est plus temporisé [fixé (17/02/2021)]
-- Sur edge la balise P est légèrement aliasé.
-- L'animation du loader est toujours en cours lorsqu'elle disparait de l'écran (voir props animation-fill-mode)
-- font-size texte ohmyfood qui semble légèrement différente à comparer de la maquette dans le footer.
-- Légère différence d'animation des menus sur la page restaurant. L'animation cible le bloc entier et pas les éléments enfants. Fait bouger les **titres** de l'ensemble 
-
-## Lien video pour les animations
-
-
-[**Page contenant les vidéos de travail pour les animations**](https://raficraft.github.io/raphaelparodi_3_16012021/source/maquettes/Animations/animations01.html)
-
-
-## Visuel des maquettes
-
-**Acceuil**
-
-![Acceuil](/source/maquettes/Accueil.png)
-
---------------------------------------------------------------------------------------------------------------------------------------
-
-**Page restaurant**
-
-![Acceuil](/source/maquettes/menu-le_delice_des_sens.png)
-
-
-
-
-
-
-
-
-
+- Projet GameOn réalisé par Raphaël Parodi et hébergé sur [GitPages](https://raficraft.github.io/raphaelparodi_P4_08022021/)
