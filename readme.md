@@ -3,6 +3,7 @@
 - Forkez une dépot Git
 - Corrigez les différentes Issues HTML/CSS
 - Corrigez les différentes Issues Javascript
+- Ne permettre la soumission du formulaire qui si tout les champs sont valides
 
 
 
@@ -31,6 +32,8 @@ Bref, si l'on devait s'en tenir au directives. Il suffirait de simplement "retou
 - V1 le code de base non retouché
 - V2 le code réécrit avec la vérification du formulaire à la soumission. (respectant la [maquette Figma]
 - V3 L'ensemble avec une UI et une UX améliorer.
+
+##Détails de la V3
 
 
 ## Notes sur le projet
