@@ -97,7 +97,7 @@ des points de suspension. Un exemple de l’effet attendu est fourni.
 
 - Le style du site à été réalisé en utilisant le préprocesseur SASS
 
-- Les styles, on été "découpé" en morceaux afin de faciliter le travail sur les différentes parties du site, puis recompilé par SASS. Voir le répertoire css/découpage. Voir sass/libs/first
+- Les styles, on été "découpé" en morceaux afin de faciliter le travail sur les différentes parties du site, puis recompilé par SASS. Voir le répertoire sass/libs/first
 
 - Des repères, comme ceux présent dans Photoshop m'on permis d'aligner correctement les éléments comme sur la maquette (Voir de le CSS body::after et body::before). Je pense d'ailleurs améliorer le concept avec JS afin d'obtenir un véritable outil de développement pour les dévelopeurs front-end.
 
