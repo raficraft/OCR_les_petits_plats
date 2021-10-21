@@ -12,7 +12,7 @@
     font-size: 1.75rem;
     text-align: center;
     background-color: white;
-    box-shadow: 0 0px 8px 0px rgba(105, 105, 105, 0.6);
+    box-shadow: 0 0 8px 0 rgba(105, 105, 105, 0.6);
     z-index: 10;
     img {
       height: 28px;
@@ -99,7 +99,7 @@ Pour avoir une transition dans le dégradé
       lighten($secondary-color, 5%) -20%,
       lighten($primary-color, 10%) 140%
     );
-    background-position: 0px 50px;
+    background-position: 0 50px;
     box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.8);
     opacity: 0;
     transition: all 0.5s linear;

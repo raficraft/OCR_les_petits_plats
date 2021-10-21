@@ -222,7 +222,7 @@ h2 {
   font-size: 1.75rem;
   text-align: center;
   background-color: white;
-  box-shadow: 0 0px 8px 0px rgba(105, 105, 105, 0.6);
+  box-shadow: 0 0 8px 0 rgba(105, 105, 105, 0.6);
   z-index: 10;
 }
 .header .logo img {
@@ -294,7 +294,7 @@ Pour avoir une transition dans le dégradé
   z-index: -1;
   border-radius: 1.5rem;
   background: linear-gradient(180deg, #ff93e1 -20%, #ae80e5 140%);
-  background-position: 0px 50px;
+  background-position: 0 50px;
   box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.8);
   opacity: 0;
   transition: all 0.5s linear;
@@ -792,7 +792,7 @@ main {
   font-size: 1.25rem;
 }
 .recipe .card__menu:hover .checkIcon {
-  right: 0px;
+  right: 0;
 }
 .recipe .card__menu:hover .checkIcon i {
   animation: rotate__icon;
@@ -864,8 +864,8 @@ main {
   position: absolute;
   display: block;
   content: "";
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   width: 20px;
   height: 80px;
   background-color: #9356dc;
