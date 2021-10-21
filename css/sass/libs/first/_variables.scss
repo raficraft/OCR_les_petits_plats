@@ -8,7 +8,7 @@ $shadow: 0 4px 5px 0 rgba(200, 200, 200, 0.6);
 
 $font-primary: "Roboto", sans-serif, "Trebuchet MS", Arial, Helvetica,
   sans-serif;
-$font-snd: "Shrikhand", cursive, "Brush Script MT", Arial, Helvetica, cursive;
+$font-snd: "Shrikhand", cursive, "Brush Script MT", Arial, Helvetica;
 
 @mixin flexCol() {
   display: flex;
