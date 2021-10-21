@@ -12,7 +12,6 @@ Intégration et animation d'une maquette fournie au format PNG d'un site de comm
 
 ![Lien](https://user.oc-static.com/upload/2020/08/24/15982605908418_Maquettes%20Ohmyfood.jpg).
 
-
 ## Éléments fourni par OpenClassRooms
 
 -   Maquette au format Smartphone, largeur 375px.De la page index et de chaque restaurants
