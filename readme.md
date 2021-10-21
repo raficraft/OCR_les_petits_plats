@@ -1,5 +1,7 @@
 # Dynamisez une page web avec des animations CSS
 
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/eec9594d7ac54a16bd248cfae0047b70)](https://www.codacy.com/gh/raficraft/OCR_les_petits_plats/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=raficraft/OCR_les_petits_plats&amp;utm_campaign=Badge_Grade)
+
 Intégration maquette HTML/CSS 
 Dynamiser la page avec des animations CSS
 Troisième projet du parcours développeur web d'OpenClassRooms.
