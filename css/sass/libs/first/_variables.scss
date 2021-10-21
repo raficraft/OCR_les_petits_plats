@@ -20,6 +20,7 @@ $font-snd: "Shrikhand", cursive, "Brush Script MT", Arial, Helvetica, cursive;
   justify-content: center;
   align-content: center;
 }
+
 @mixin col__justifyCenter__itemsCenter() {
   @include flexCol;
   justify-content: center;
@@ -36,6 +37,7 @@ $font-snd: "Shrikhand", cursive, "Brush Script MT", Arial, Helvetica, cursive;
   justify-content: space-between;
   align-items: center;
 }
+
 @mixin row__justifyCenter__itemsCenter() {
   @include flexRow;
   justify-content: center;
