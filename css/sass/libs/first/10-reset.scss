@@ -169,7 +169,7 @@ button {
 	de l'écran.	*/
 
 /*
-	body:after{
+	body::after{
 	  position: fixed;
 	  right : 20.5rem;
 	  content : '';

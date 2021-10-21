@@ -172,7 +172,7 @@ button {
 	Outil JS dans le coin inférieure
 	de l'écran.	*/
 /*
-	body:after{
+	body::after{
 	  position: fixed;
 	  right : 20.5rem;
 	  content : '';
@@ -282,6 +282,7 @@ Pour avoir une transition dans le dégradé
   font-weight: 300;
   border: none;
   border-radius: 1.5rem;
+  margin-bottom: 4rem;
 }
 .callToAction::before {
   position: absolute;
@@ -301,10 +302,6 @@ Pour avoir une transition dans le dégradé
 .callToAction:hover::before, .callToAction:hover {
   opacity: 1;
   text-shadow: 0 4px 3px #9356dc;
-}
-
-main .callToAction {
-  margin-bottom: 4rem;
 }
 
 .features {
@@ -855,8 +852,8 @@ main {
   position: relative;
 }
 
-.animation__loader:before,
-.animation__loader:after,
+.animation__loader::before,
+.animation__loader::after,
 .animation__loader span {
   position: absolute;
   display: block;

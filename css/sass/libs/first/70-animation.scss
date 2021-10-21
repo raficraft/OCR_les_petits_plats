@@ -21,8 +21,8 @@
   position: relative;
 }
 
-.animation__loader:before,
-.animation__loader:after,
+.animation__loader::before,
+.animation__loader::after,
 .animation__loader span {
   position: absolute;
   display: block;
