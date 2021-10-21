@@ -1,0 +1,19 @@
+{
+  "name": "ocr_les_petits_plats",
+  "version": "1.0.0",
+  "description": "Intégration maquette HTML/CSS \r Dynamiser la page avec des animations CSS\r Troisième projet du parcours développeur web d'OpenClassRooms.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raficraft/OCR_les_petits_plats.git"
+  },
+  "author": "Raficraft",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/raficraft/OCR_les_petits_plats/issues"
+  },
+  "homepage": "https://github.com/raficraft/OCR_les_petits_plats#readme"
+}

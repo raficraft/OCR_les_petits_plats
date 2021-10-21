@@ -1,184 +1,168 @@
-.restaurant{
+.restaurant {
+  @include flexCol;
+  padding: 3rem 1.25rem 4rem;
+  background-color: $dark-gray;
 
-    @include flexCol;
-    padding : 3rem 1.25rem 4rem;
+  @media screen and (min-width: 1440px) {
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
     background-color: $dark-gray;
+  }
 
-    @media screen and (min-width : 1440px){
+  h2 {
+    font-weight: bold;
+  }
 
-        border-top-left-radius: 2rem;
-        border-top-right-radius: 2rem;
-        background-color: $dark-gray;
+  ul {
+    @include flexCol;
+
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
     }
-    
 
-    h2{font-weight: bold;}
+    li {
+      @include flexCol;
+      width: 100%;
+      height: 251px;
 
-    ul{
-        
-        @include flexCol;
-
-        @media screen and (min-width : 768px){
-          
-                flex-direction : row;
-                flex-wrap: wrap;
-                justify-content: space-between;
-        }
-
-        li{
-            @include flexCol;
-            width: 100%;
-            height: 251px;
-
-            @media screen and (min-width : 768px){
-          
-              width: 48%;
-        }
-        }
-
-
-        .flexImg{
-            height: 174px; 
-            max-height: 174px;          
-        }
-
-       
+      @media screen and (min-width: 768px) {
+        width: 48%;
+      }
     }
+
+    .flexImg {
+      height: 174px;
+      max-height: 174px;
+    }
+  }
 }
 
+.sticker {
+  position: relative;
+  overflow: hidden;
+  margin: 0.5rem 0;
+  height: 252px;
+  box-shadow: $shadow;
+  border-radius: 1rem;
 
-.sticker{
-    position : relative;
-    overflow: hidden;
-    margin : 0.5rem 0;    
-    height:252px;
-    box-shadow: $shadow;
-    border-radius:  1rem;
+  img {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+  }
 
-    img{
-        border-top-left-radius: 1rem;
-        border-top-right-radius: 1rem;
-    }
-
-    .sticker__new{
-        display: flex; 
-        position: absolute;
-        top : 0.75rem;
-        right : 0.75rem;
-        padding : 0.5rem 1rem;
-        background-color: #99e2d0;
-        color : #008766;
-        font-size: 0.875rem;
-        font-weight: bold;
-        text-transform: capitalize;
-        border-radius: 2px;
-    }
+  .sticker__new {
+    display: flex;
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+    padding: 0.5rem 1rem;
+    background-color: #99e2d0;
+    color: #008766;
+    font-size: 0.875rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    border-radius: 2px;
+  }
 }
 
-.sticker__info{
-    @include row__justifyBetween__itemsCenter;
-    position : relative;
-    padding : 0.75rem 1rem;
-    height: 77px;
-    background-color: white;
+.sticker__info {
+  @include row__justifyBetween__itemsCenter;
+  position: relative;
+  padding: 0.75rem 1rem;
+  height: 77px;
+  background-color: white;
 
-    >div{
-        @include flexCol;
-        height: 100%;
-    }
+  > div {
+    @include flexCol;
+    height: 100%;
+  }
 
-    .sticker__title{
-        margin-top : 0.375rem;
-        margin-bottom : 0.5rem;
-        font-size : 1.125rem;
-        font-weight: bold;
-        //Verifier la police de tous les text
-        font-family: $font-primary;
-        
-    }
-    
+  .sticker__title {
+    margin-top: 0.375rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.125rem;
+    font-weight: bold;
+    //Verifier la police de tous les text
+    font-family: $font-primary;
+  }
 
-    .sticker__txt{
-        font-weight: 300;
-        font-family: $font-primary;
-        text-transform: capitalize;
-    }
-    
- }
+  .sticker__txt {
+    font-weight: 300;
+    font-family: $font-primary;
+    text-transform: capitalize;
+  }
+}
 
 ////NB Module autonome
 ///Font-awesome :hover effect
 ///Show gradient.
 
- .fontIcon__container{
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    flex: 1;
-    position : relative;
-    height:100%;
+.fontIcon__container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex: 1;
+  position: relative;
+  height: 100%;
 
+  .fontIcon {
+    position: absolute;
+    z-index: 20;
+    color: rgb(68, 68, 68);
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: opacity 0.5s linear;
+    background-color: rgb(255, 255, 255);
 
-
-    .fontIcon{
-        position : absolute; 
-        z-index : 20;
-        color : rgb(68, 68, 68);
-        font-size: 1.5rem;
-        cursor : pointer;
-        transition: opacity 0.5s linear;        
-        background-color: rgb(255, 255, 255);        
-
-        &:hover {
-           opacity: 0;
-        }   
+    &:hover {
+      opacity: 0;
     }
+  }
 
-    .fontIcon__invisible--gradientPurple{
-        background: linear-gradient(
-            45deg,
-            #{$secondary-color} 0%,
-            #{$primary-color} 100%
-            );
-    }
+  .fontIcon__invisible--gradientPurple {
+    background: linear-gradient(
+      45deg,
+      #{$secondary-color} 0%,
+      #{$primary-color} 100%
+    );
+  }
 
-    .fontIcon__invisible{
-        position: absolute;
-        z-index: 1;
-        color : $primary-color;
-        font-size: 1.5rem; 
-        cursor : pointer;      
-        -webkit-background-clip: text;
-        background-clip: text;
-        color: transparent;
-        opacity : 1;
-    }
-
-  
-
+  .fontIcon__invisible {
+    position: absolute;
+    z-index: 1;
+    color: $primary-color;
+    font-size: 1.5rem;
+    cursor: pointer;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    opacity: 1;
+  }
 }
 
 //rustine
 
-.header__menu--restaurant{
-
-    @media screen AND (min-width : 768px){
-   
-        .fontIcon__container{
-            margin-right: 3.25rem !important;
-        }
-
+.header__menu--restaurant {
+  @media screen AND (min-width: 768px) {
+    .fontIcon__container {
+      margin-right: 3.25rem !important;
     }
-   
+  }
 }
-
-
-
-
 
 //boucle
 
-.restaurant ul li:nth-child(1) img { margin-top : -2.725rem;}
-.restaurant ul li:nth-child(2) img { margin-top : -8.725rem;}
-.restaurant ul li:nth-child(3) img { margin-top : -2.725rem;}
-.restaurant ul li:nth-child(4) img { margin-top : -3rem;}
+.restaurant ul li:nth-child(1) img {
+  margin-top: -2.725rem;
+}
+.restaurant ul li:nth-child(2) img {
+  margin-top: -8.725rem;
+}
+.restaurant ul li:nth-child(3) img {
+  margin-top: -2.725rem;
+}
+.restaurant ul li:nth-child(4) img {
+  margin-top: -3rem;
+}
