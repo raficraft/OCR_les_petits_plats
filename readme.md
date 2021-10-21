@@ -20,9 +20,8 @@ Intégration et animation d'une maquette fournie au format PNG d'un site de comm
 ## Technologies
 
 -   Le développement devra se faire en CSS, sans JavaScript.
--   Aucun framework ne devra être utilisé, en revanche l’utilisation de SASS serait un
-plus.
-- Aucun code CSS ne devra être appliqué via un attribut style dans une balise HTML.
+-   Aucun framework ne devra être utilisé, en revanche l’utilisation de SASS serait un plus.
+-   Aucun code CSS ne devra être appliqué via un attribut style dans une balise HTML.
 -   Le code doit être versionné avec git et doit avoir un repo distant sur Github ou Gitlab
 -   le site doit être hébergé sur GitPages.
 -   Le site devra être compatible avec les dernières versions de Chrome et Firefox.
@@ -44,7 +43,6 @@ La cible étant les personnes connectées et pressées, le site sera développé
 l’approche mobile-first. Pour cette raison, seules des maquettes mobiles seront réalisées.
 Sur tablette et desktop, le site devra s’adapter, mais ces supports n’étant pas prioritaires,
 leur mise en page est libre.
-
 -   L’ensemble du site devra être responsive sur mobile, tablette et desktop.
 -   Les pages devront passer la validation W3C en HTML et CSS sans erreur.
 -   Le site doit être parfaitement compatible avec les dernières versions desktop de
@@ -55,7 +53,6 @@ Chrome et Firefox.
 **Boutons**
 -   Au survol, la couleur de fond des boutons principaux devra légèrement s’éclaircir.
 L’ombre portée devra également être plus visible.
-
 -   À terme, les visiteurs pourront sauvegarder leurs menus préférés. Pour ça, un
 bouton "J’aime" en forme de cœur est présent sur la maquette. Au clic, il devra se
 remplir progressivement. Pour cette première version, l’effet peut être apparaître au
