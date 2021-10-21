@@ -14,12 +14,8 @@ Intégration et animation d'une maquette fournie au format PNG d'un site de comm
 ## Éléments fourni par OpenClassRooms
 
 -   Maquette au format Smartphone, largeur 375px.De la page index et de chaque restaurants
-
 -   Vidéo d'exemple des animùations à réaliser
-
 -   Logo aux fomats PNG et SVG
-
-
 
 ## Technologies
 
@@ -27,11 +23,8 @@ Intégration et animation d'une maquette fournie au format PNG d'un site de comm
 -   Aucun framework ne devra être utilisé, en revanche l’utilisation de SASS serait un
 plus.
 - Aucun code CSS ne devra être appliqué via un attribut style dans une balise HTML.
-
 -   Le code doit être versionné avec git et doit avoir un repo distant sur Github ou Gitlab
-
 -   le site doit être hébergé sur GitPages.
-
 -   Le site devra être compatible avec les dernières versions de Chrome et Firefox.
 
 ## Identité graphique
@@ -44,7 +37,6 @@ plus.
 -   Primaire : #9356DC(violet)
 -   Secondaire: #FF79DA(rose)
 -   Tertiare : #99E2D0(vert pastel)
-
 
 ## Compatibilité
 
@@ -90,17 +82,12 @@ la droite vers la gauche. Pour cette première version, l’effet peut apparaît
 sur desktop au lieu du clic. Si l’intitulé du plat est trop long, il devra être rogné avec
 des points de suspension. Un exemple de l’effet attendu est fourni.
 
-
 ## Notes sur le projet
 
 -   Le site à été réalisé en utilisant VS code.
-
 -   Le style du site à été réalisé en utilisant le préprocesseur SASS
-
 -   Les styles, on été "découpé" en morceaux afin de faciliter le travail sur les différentes parties du site, puis recompilé par SASS. Voir le répertoire sass/libs/first
-
 -   Des repères, comme ceux présent dans Photoshop m'on permis d'aligner correctement les éléments comme sur la maquette (Voir de le CSS body::after et body::before). Je pense d'ailleurs améliorer le concept avec JS afin d'obtenir un véritable outil de développement pour les dévelopeurs front-end.
-
 -   Projet vraiment intéressant qui m'as permit de pratiquer les animations avec CSS et de comprendre à quelle moment utilisé les transitions ou les keyframes
 
 ## Liens d'ébergements
