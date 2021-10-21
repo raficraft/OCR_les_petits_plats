@@ -19,8 +19,8 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
 	font: inherit;
+	font-size: 100%;
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -28,20 +28,29 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
 body {
 	line-height: 1;
+	@include flexCol;
+	font-family: $font-primary;
+	font-size: 16px;
+	line-height: 1;
 }
+
 ol, ul {
 	list-style: none;
 }
+
 blockquote, q {
 	quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -59,13 +68,6 @@ a{
     box-sizing: border-box;
 }
 
-body { 
-    @include flexCol;
-    font-family: $font-primary;
-    font-size: 16px;
-    line-height: 1;
-}
-
 h1{
     margin-bottom : 1rem;
     font-size : 1.5rem;
@@ -76,20 +78,19 @@ h2,h3{
     font-size: 1rem;
 }
 
-*{box-sizing: border-box;}
-
-//img{width:200px;}
+*{
+	box-sizing: border-box;
+}
 
 button{cursor: pointer;}
 
-/*Repère vertical et horizontal.
+/* Repère vertical et horizontal.
 	Permet de contrôler les alignements.
-	NB:Ecrire une fonction SASS, 
-	réflechir à une grille de fond et|ou 
+	NB:Ecrire une fonction SASS,
+	réflechir à une grille de fond et|ou
 	en sur-impression.
-	Outil JS dans le coin inférieure 
-	de l'écran.
-	*/
+	Outil JS dans le coin inférieure
+	de l'écran.	*/
 
 /*
 	body:after{
@@ -114,7 +115,6 @@ button{cursor: pointer;}
  h2{
 	font-size: 1.5rem;
 }
-
 
 .flexImg{
 	overflow: hidden;
