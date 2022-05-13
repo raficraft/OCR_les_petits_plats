@@ -1,5 +1,6 @@
 # Dynamisez une page web avec des animations CSS
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/f6047a13e411417090f25f5a60526957)](https://app.codacy.com/gh/raficraft/OCR_oh_my_food_p3?utm_source=github.com&utm_medium=referral&utm_content=raficraft/OCR_oh_my_food_p3&utm_campaign=Badge_Grade_Settings)
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/eec9594d7ac54a16bd248cfae0047b70)](https://www.codacy.com/gh/raficraft/OCR_les_petits_plats/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=raficraft/OCR_les_petits_plats&amp;utm_campaign=Badge_Grade)
 
 Intégration maquette HTML/CSS 
