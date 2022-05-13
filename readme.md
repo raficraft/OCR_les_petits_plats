@@ -90,7 +90,7 @@ des points de suspension. Un exemple de l’effet attendu est fourni.
 
 ## Liens d'ébergements
 
--   Projet Reservia réalisé par Raphaël Parodi et hébergé sur [GitPages] https://raficraft.github.io/raphaelparodi_3_16012021/)
+-   Projet Reservia réalisé par Raphaël Parodi et hébergé sur ![GitPages](https://raficraft.github.io/OCR_oh_my_food_p3/)
 
 
 
